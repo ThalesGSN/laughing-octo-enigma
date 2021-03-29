@@ -7,7 +7,7 @@
 #include "types.h"
 #include "scoreBoard.h"
 #include "initGame.h"
-#include "draw.h"
+#include "render.h"
 #include "eventos.h"
 
 #define true 1
@@ -109,11 +109,11 @@ int main(int argc, char **argv) {
             .SCREEN_W = SCREEN_W,
             .SCREEN_HORIZONTAL_FRACTION = ((float)SCREEN_W / 6.0f),
             .SCREEN_VERTICAL_FRACTION = ((float)SCREEN_H / 4.0f),
-            .FORCE_FIELD_RADIUS = 30.0f,
+            .RaioCirculo = 30.0f,
             .velocidadeDoTanque = 2.5f,
             .velocidadeDoMissil = 4,
             .velocidadeAngular = M_PI_4 / 12,
-            .history = history,
+            .scoreBoard = history,
             .event_queue = event_queue,
             .display = display,
             .size_32 = size_32,
@@ -134,7 +134,7 @@ int main(int argc, char **argv) {
     renderGameOver(tanques, globais);
     al_flip_display();
     al_rest(3);
-    atualizaScoreBoard(globais.history);
+    atualizaScoreBoard(globais.scoreBoard);
 
     al_destroy_timer(timer);
     al_destroy_display(display);

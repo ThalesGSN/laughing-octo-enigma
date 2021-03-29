@@ -3,7 +3,7 @@
 //
 #include <math.h>
 #include "types.h"
-#include "draw.h"
+#include "render.h"
 
 #define true 1
 #define false 0
@@ -186,11 +186,8 @@ int verificaGameover(Tanques players, VariaveisGlobais* globals) {
         return false;
     }
 
-    globals->history.tanqueA += (players.tanqueA.HP > 0);
-    globals->history.tanqueB += (players.tanqueB.HP > 0);
-
-    al_flip_display();
-    al_rest(3);
+    globals->scoreBoard.tanqueA += (players.tanqueA.HP > 0);
+    globals->scoreBoard.tanqueB += (players.tanqueB.HP > 0);
 
     return true;
 }

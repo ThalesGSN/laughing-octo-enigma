@@ -14,11 +14,11 @@ typedef struct VariaveisGlobais {
     int SCREEN_H;
     float SCREEN_HORIZONTAL_FRACTION;
     float SCREEN_VERTICAL_FRACTION;
-    float FORCE_FIELD_RADIUS;
+    float RaioCirculo;
     float velocidadeDoTanque;
     float velocidadeDoMissil;
     float velocidadeAngular;
-    ScoreBoard history;
+    ScoreBoard scoreBoard;
     ALLEGRO_DISPLAY *display;
     ALLEGRO_EVENT_QUEUE* event_queue;
     ALLEGRO_TIMER* timer;

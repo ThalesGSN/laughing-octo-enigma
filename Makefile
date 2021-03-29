@@ -28,7 +28,6 @@ $(EXE): $(OBJS) | $(BIN)
 	$(CC) $^ -o $@ $(PATH_ALLEGRO)$(LIB_ALLEGRO)
 
 %.o: %.c
-	@echo "COMPILING SOURCE $< INTO OBJECT $@"
 	if not exist "$(@D)" $(MKDIR) $(subst /,\\,$(@D))
 	$(CC) $(CFLAGS) $(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -c $< -o $@
 

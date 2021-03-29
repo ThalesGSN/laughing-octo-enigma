@@ -20,7 +20,6 @@ Obstaculo getObstaculo(Ponto superiorEsquerdo, Ponto inferiorDireito){
 }
 
 Obstaculo getObstaculoRetangular(VariaveisGlobais variables){
-
     Ponto superiorEsquerdo = {
             .x = 2 * (variables.SCREEN_HORIZONTAL_FRACTION),
             .y = 0.9f * (variables.SCREEN_VERTICAL_FRACTION)
@@ -44,102 +43,123 @@ Cenario iniciaCenario(VariaveisGlobais variables) {
     return cenario;
 }
 
-Tanques iniciaTanques(VariaveisGlobais variables) {
-    float alpha = M_PI_2 - M_PI_4;
-    float internTriangleHeight = variables.FORCE_FIELD_RADIUS * sinf(alpha);
-    float internTriangleHalfBase = variables.FORCE_FIELD_RADIUS * sinf(M_PI_4);
+Tanque getTanqueA(VariaveisGlobais globais) {
+    float alturaInternaTriangulo = globais.RaioCirculo * sinf(M_PI_2 - M_PI_4);
+    float semiBaseInternaDoTriangulo = globais.RaioCirculo * sinf(M_PI_4);
 
-    Tanques tanques = {
-            .tanqueA = {
-                    .circuloExterno = {
-                            .centro = {
-                                    .x = 0.5f * (variables.SCREEN_HORIZONTAL_FRACTION),
-                                    .y = (variables.SCREEN_VERTICAL_FRACTION) * 2
-                            },
-                            .velocidadeLinear = 0.0f,
-                            .angulo = M_PI_2,
-                            .velocidadeAngular = 0.0f,
-                            .raio = variables.FORCE_FIELD_RADIUS,
-                    },
-                    .A = {
-                            .x = 0,
-                            .y = -variables.FORCE_FIELD_RADIUS
-                    },
-                    .B = {
-                            .x = -internTriangleHalfBase,
-                            .y = internTriangleHeight
-                    },
-                    .C = {
-                            .x = internTriangleHalfBase,
-                            .y = internTriangleHeight
-                    },
-                    .color = al_map_rgb(255, 0, 0),
-                    .emColisao = 0,
-                    .HP = 5,
-                    .pontos = 0
+    Ponto pontaTanqueA = {
+            .x = 0,
+            .y = -globais.RaioCirculo
+    };
+
+    Circulo circuloTanqueA = {
+            .centro = {
+                    .x = 0.5f * (globais.SCREEN_HORIZONTAL_FRACTION),
+                    .y = (globais.SCREEN_VERTICAL_FRACTION) * 2
             },
-            .tanqueB = {
-                    .circuloExterno = {
-                            .centro = {
-                                    .x = 5.5f * (variables.SCREEN_HORIZONTAL_FRACTION),
-                                    .y = (variables.SCREEN_VERTICAL_FRACTION) * 2
-                            },
-                            .velocidadeLinear = 0.0f,
-                            .angulo = M_PI_2,
-                            .velocidadeAngular = 0.0f,
-                            .raio = variables.FORCE_FIELD_RADIUS,
-                    },
-                    .A = {
-                            .x = 0,
-                            .y = -variables.FORCE_FIELD_RADIUS
-                    },
-                    .B = {
-                            .x = -internTriangleHalfBase,
-                            .y = internTriangleHeight
-                    },
-                    .C = {
-                            .x = internTriangleHalfBase,
-                            .y = internTriangleHeight
-                    },
-                    .color = al_map_rgb(0, 0, 255),
-                    .emColisao = 0,
-                    .HP = 5,
-                    .pontos = 0
-            },
+            .velocidadeLinear = 0.0f,
+            .angulo = M_PI_2,
+            .velocidadeAngular = 0.0f,
+            .raio = globais.RaioCirculo,
+            .senoEixoY = sinf(M_PI_2),
+            .cossenoEixoX = cosf(M_PI_2)
     };
 
     Missil missilA = {
             .color = al_map_rgb(0, 0, 0),
             .missil = {
-                    .centro = tanques.tanqueA.A,
+                    .centro = pontaTanqueA,
                     .raio = 7.0f,
-                    .angulo = tanques.tanqueA.circuloExterno.angulo
+                    .angulo = circuloTanqueA.angulo,
+                    .senoEixoY = circuloTanqueA.senoEixoY,
+                    .cossenoEixoX = circuloTanqueA.cossenoEixoX
             },
-            .emMovimento = 0,
+            .emMovimento = false,
 
+    };
+
+    Tanque tanqueA = {
+            .circuloExterno = circuloTanqueA,
+            .A = pontaTanqueA,
+            .B = {
+                    .x = -semiBaseInternaDoTriangulo,
+                    .y = alturaInternaTriangulo
+            },
+            .C = {
+                    .x = semiBaseInternaDoTriangulo,
+                    .y = alturaInternaTriangulo
+            },
+            .color = al_map_rgb(255, 0, 0),
+            .emColisao = 0,
+            .HP = 5,
+            .pontos = 0,
+            .missil = missilA
+    };
+
+    return tanqueA;
+}
+
+Tanque getTanqueB(VariaveisGlobais globais) {
+    float alturaInternaTriangulo = globais.RaioCirculo * sinf(M_PI_2 - M_PI_4);
+    float semiBaseInternaDoTriangulo = globais.RaioCirculo * sinf(M_PI_4);
+
+    Ponto pontaTanqueB ={
+            .x = 0,
+            .y = -globais.RaioCirculo
+    };
+
+    Circulo circuloTanqueB = {
+            .centro = {
+                    .x = 5.5f * (globais.SCREEN_HORIZONTAL_FRACTION),
+                    .y = (globais.SCREEN_VERTICAL_FRACTION) * 2
+            },
+            .velocidadeLinear = 0,
+            .angulo = M_PI_2,
+            .velocidadeAngular = 0,
+            .raio = globais.RaioCirculo,
+            .senoEixoY = sinf(M_PI_2),
+            .cossenoEixoX = cosf(M_PI_2)
     };
 
     Missil missilB = {
             .color = al_map_rgb(0, 0, 0),
             .missil = {
-                    .centro = tanques.tanqueB.A,
+                    .centro = pontaTanqueB,
                     .raio = 7.0f,
-                    .angulo = tanques.tanqueB.circuloExterno.angulo
+                    .angulo = circuloTanqueB.angulo,
+                    .senoEixoY = circuloTanqueB.senoEixoY,
+                    .cossenoEixoX = circuloTanqueB.cossenoEixoX
             },
             .emMovimento = false,
     };
 
-    tanques.tanqueA.circuloExterno.cossenoEixoX = cosf(tanques.tanqueA.circuloExterno.angulo);
-    tanques.tanqueA.circuloExterno.senoEixoY = sinf(tanques.tanqueA.circuloExterno.angulo);
-    missilA.missil.cossenoEixoX = tanques.tanqueA.circuloExterno.cossenoEixoX;
-    missilA.missil.senoEixoY = tanques.tanqueA.circuloExterno.senoEixoY;
-    tanques.tanqueA.missil = missilA;
-    tanques.tanqueB.circuloExterno.cossenoEixoX = cosf(tanques.tanqueB.circuloExterno.angulo);
-    tanques.tanqueB.circuloExterno.senoEixoY = sinf(tanques.tanqueB.circuloExterno.angulo);
+    Tanque tanqueB = {
+            .circuloExterno = circuloTanqueB,
+            .A = pontaTanqueB,
+            .B = {
+                    .x = -semiBaseInternaDoTriangulo,
+                    .y = alturaInternaTriangulo
+            },
+            .C = {
+                    .x = semiBaseInternaDoTriangulo,
+                    .y = alturaInternaTriangulo
+            },
+            .color = al_map_rgb(0, 0, 255),
+            .emColisao = false,
+            .HP = 5,
+            .pontos = 0,
+            .missil = missilB
+    };
 
-    missilB.missil.cossenoEixoX = tanques.tanqueB.circuloExterno.cossenoEixoX;
-    missilB.missil.senoEixoY = tanques.tanqueB.circuloExterno.senoEixoY;
-    tanques.tanqueB.missil = missilB;
+    return tanqueB;
+}
+
+Tanques iniciaTanques(VariaveisGlobais globais) {
+
+    Tanques tanques = {
+            .tanqueA = getTanqueA(globais),
+            .tanqueB = getTanqueB(globais)
+    };
 
     return tanques;
 }
