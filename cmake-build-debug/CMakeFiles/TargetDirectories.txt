@@ -1,0 +1,3 @@
+C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/testAllegro.dir
+C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
