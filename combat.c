@@ -133,7 +133,7 @@ int main(int argc, char **argv) {
 
     renderGameOver(tanques, globais);
     al_flip_display();
-    al_rest(3);
+    al_rest(5.5);
     atualizaScoreBoard(globais.scoreBoard);
 
     al_destroy_timer(timer);
