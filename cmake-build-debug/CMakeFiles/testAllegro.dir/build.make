@@ -90,35 +90,83 @@ CMakeFiles/testAllegro.dir/combat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testAllegro.dir/combat.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thale\CLionProjects\pds-tp1-combate\combat.c -o CMakeFiles\testAllegro.dir\combat.c.s
 
-CMakeFiles/testAllegro.dir/historyFile.c.obj: CMakeFiles/testAllegro.dir/flags.make
-CMakeFiles/testAllegro.dir/historyFile.c.obj: CMakeFiles/testAllegro.dir/includes_C.rsp
-CMakeFiles/testAllegro.dir/historyFile.c.obj: ../historyFile.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/testAllegro.dir/historyFile.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\testAllegro.dir\historyFile.c.obj   -c C:\Users\thale\CLionProjects\pds-tp1-combate\historyFile.c
+CMakeFiles/testAllegro.dir/scoreBoard.c.obj: CMakeFiles/testAllegro.dir/flags.make
+CMakeFiles/testAllegro.dir/scoreBoard.c.obj: CMakeFiles/testAllegro.dir/includes_C.rsp
+CMakeFiles/testAllegro.dir/scoreBoard.c.obj: ../scoreBoard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/testAllegro.dir/scoreBoard.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\testAllegro.dir\scoreBoard.c.obj   -c C:\Users\thale\CLionProjects\pds-tp1-combate\scoreBoard.c
 
-CMakeFiles/testAllegro.dir/historyFile.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testAllegro.dir/historyFile.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\thale\CLionProjects\pds-tp1-combate\historyFile.c > CMakeFiles\testAllegro.dir\historyFile.c.i
+CMakeFiles/testAllegro.dir/scoreBoard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testAllegro.dir/scoreBoard.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\thale\CLionProjects\pds-tp1-combate\scoreBoard.c > CMakeFiles\testAllegro.dir\scoreBoard.c.i
 
-CMakeFiles/testAllegro.dir/historyFile.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testAllegro.dir/historyFile.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thale\CLionProjects\pds-tp1-combate\historyFile.c -o CMakeFiles\testAllegro.dir\historyFile.c.s
+CMakeFiles/testAllegro.dir/scoreBoard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testAllegro.dir/scoreBoard.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thale\CLionProjects\pds-tp1-combate\scoreBoard.c -o CMakeFiles\testAllegro.dir\scoreBoard.c.s
+
+CMakeFiles/testAllegro.dir/initGame.c.obj: CMakeFiles/testAllegro.dir/flags.make
+CMakeFiles/testAllegro.dir/initGame.c.obj: CMakeFiles/testAllegro.dir/includes_C.rsp
+CMakeFiles/testAllegro.dir/initGame.c.obj: ../initGame.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/testAllegro.dir/initGame.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\testAllegro.dir\initGame.c.obj   -c C:\Users\thale\CLionProjects\pds-tp1-combate\initGame.c
+
+CMakeFiles/testAllegro.dir/initGame.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testAllegro.dir/initGame.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\thale\CLionProjects\pds-tp1-combate\initGame.c > CMakeFiles\testAllegro.dir\initGame.c.i
+
+CMakeFiles/testAllegro.dir/initGame.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testAllegro.dir/initGame.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thale\CLionProjects\pds-tp1-combate\initGame.c -o CMakeFiles\testAllegro.dir\initGame.c.s
+
+CMakeFiles/testAllegro.dir/draw.c.obj: CMakeFiles/testAllegro.dir/flags.make
+CMakeFiles/testAllegro.dir/draw.c.obj: CMakeFiles/testAllegro.dir/includes_C.rsp
+CMakeFiles/testAllegro.dir/draw.c.obj: ../draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/testAllegro.dir/draw.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\testAllegro.dir\draw.c.obj   -c C:\Users\thale\CLionProjects\pds-tp1-combate\draw.c
+
+CMakeFiles/testAllegro.dir/draw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testAllegro.dir/draw.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\thale\CLionProjects\pds-tp1-combate\draw.c > CMakeFiles\testAllegro.dir\draw.c.i
+
+CMakeFiles/testAllegro.dir/draw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testAllegro.dir/draw.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thale\CLionProjects\pds-tp1-combate\draw.c -o CMakeFiles\testAllegro.dir\draw.c.s
+
+CMakeFiles/testAllegro.dir/eventos.c.obj: CMakeFiles/testAllegro.dir/flags.make
+CMakeFiles/testAllegro.dir/eventos.c.obj: CMakeFiles/testAllegro.dir/includes_C.rsp
+CMakeFiles/testAllegro.dir/eventos.c.obj: ../eventos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/testAllegro.dir/eventos.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\testAllegro.dir\eventos.c.obj   -c C:\Users\thale\CLionProjects\pds-tp1-combate\eventos.c
+
+CMakeFiles/testAllegro.dir/eventos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testAllegro.dir/eventos.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\thale\CLionProjects\pds-tp1-combate\eventos.c > CMakeFiles\testAllegro.dir\eventos.c.i
+
+CMakeFiles/testAllegro.dir/eventos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testAllegro.dir/eventos.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\thale\CLionProjects\pds-tp1-combate\eventos.c -o CMakeFiles\testAllegro.dir\eventos.c.s
 
 # Object files for target testAllegro
 testAllegro_OBJECTS = \
 "CMakeFiles/testAllegro.dir/combat.c.obj" \
-"CMakeFiles/testAllegro.dir/historyFile.c.obj"
+"CMakeFiles/testAllegro.dir/scoreBoard.c.obj" \
+"CMakeFiles/testAllegro.dir/initGame.c.obj" \
+"CMakeFiles/testAllegro.dir/draw.c.obj" \
+"CMakeFiles/testAllegro.dir/eventos.c.obj"
 
 # External object files for target testAllegro
 testAllegro_EXTERNAL_OBJECTS =
 
 testAllegro.exe: CMakeFiles/testAllegro.dir/combat.c.obj
-testAllegro.exe: CMakeFiles/testAllegro.dir/historyFile.c.obj
+testAllegro.exe: CMakeFiles/testAllegro.dir/scoreBoard.c.obj
+testAllegro.exe: CMakeFiles/testAllegro.dir/initGame.c.obj
+testAllegro.exe: CMakeFiles/testAllegro.dir/draw.c.obj
+testAllegro.exe: CMakeFiles/testAllegro.dir/eventos.c.obj
 testAllegro.exe: CMakeFiles/testAllegro.dir/build.make
 testAllegro.exe: CMakeFiles/testAllegro.dir/linklibs.rsp
 testAllegro.exe: CMakeFiles/testAllegro.dir/objects1.rsp
 testAllegro.exe: CMakeFiles/testAllegro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable testAllegro.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable testAllegro.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\testAllegro.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

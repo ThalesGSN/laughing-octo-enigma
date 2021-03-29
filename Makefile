@@ -1,3 +1,4 @@
+SHELL=cmd
 ALLEGRO_VERSION=5.0.10
 MINGW_VERSION=4.7.0
 FOLDER=C:
@@ -7,17 +8,34 @@ PATH_ALLEGRO=$(FOLDER)$(FOLDER_NAME)
 LIB_ALLEGRO=\lib\liballegro-$(ALLEGRO_VERSION)-monolith-mt.a
 INCLUDE_ALLEGRO=\include
 
-CFLAGS = -c -Wall -Iinclude
+MKDIR   := mkdir
+TEST    := test
+RMDIR   := rmdir /Q /S
+CC      := gcc
+OBJ_INIT:= init
+INCLUDE := include
+SRCS    := $(wildcard *.c)
+OBJS    := $(patsubst %.c,%.o,$(SRCS))
+EXE     := combat.exe
+CFLAGS  := -g -I
+LDLIBS  := -lm
 
-all: combat.exe
+.PHONY: all run clean path
 
-combat.exe: combat.o
-	gcc -o combat.exe combat.o $(PATH_ALLEGRO)$(LIB_ALLEGRO)
+all: $(EXE)
 
-combat.o: combat.c
-	gcc -I $(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -c combat.c
+$(EXE): $(OBJS) | $(BIN)
+	$(CC) $^ -o $@ $(PATH_ALLEGRO)$(LIB_ALLEGRO)
+
+%.o: %.c
+	@echo "COMPILING SOURCE $< INTO OBJECT $@"
+	if not exist "$(@D)" $(MKDIR) $(subst /,\\,$(@D))
+	$(CC) $(CFLAGS) $(PATH_ALLEGRO)$(INCLUDE_ALLEGRO) -c $< -o $@
+
+
+run: $(EXE)
+	$<
 
 clean:
-	del combat.o
-	del combat.exe
-
+	del *.o
+	del *.exe

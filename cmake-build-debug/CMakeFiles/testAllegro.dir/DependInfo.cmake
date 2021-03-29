@@ -5,7 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/thale/CLionProjects/pds-tp1-combate/combat.c" "C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/testAllegro.dir/combat.c.obj"
-  "C:/Users/thale/CLionProjects/pds-tp1-combate/historyFile.c" "C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/testAllegro.dir/historyFile.c.obj"
+  "C:/Users/thale/CLionProjects/pds-tp1-combate/draw.c" "C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/testAllegro.dir/draw.c.obj"
+  "C:/Users/thale/CLionProjects/pds-tp1-combate/eventos.c" "C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/testAllegro.dir/eventos.c.obj"
+  "C:/Users/thale/CLionProjects/pds-tp1-combate/initGame.c" "C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/testAllegro.dir/initGame.c.obj"
+  "C:/Users/thale/CLionProjects/pds-tp1-combate/scoreBoard.c" "C:/Users/thale/CLionProjects/pds-tp1-combate/cmake-build-debug/CMakeFiles/testAllegro.dir/scoreBoard.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

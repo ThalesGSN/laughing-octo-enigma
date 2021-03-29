@@ -93,12 +93,12 @@ clean: CMakeFiles/testAllegro.dir/clean
 CMakeFiles/testAllegro.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target testAllegro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target testAllegro"
 .PHONY : CMakeFiles/testAllegro.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testAllegro.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/testAllegro.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\thale\CLionProjects\pds-tp1-combate\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/testAllegro.dir/rule

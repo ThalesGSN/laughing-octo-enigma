@@ -87,13 +87,28 @@
 		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/combat.c">
 			<Option target="testAllegro"/>
 		</Unit>
-		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/dsa.h">
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/draw.c">
 			<Option target="testAllegro"/>
 		</Unit>
-		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/historyFile.c">
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/draw.h">
 			<Option target="testAllegro"/>
 		</Unit>
-		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/historyFile.h">
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/eventos.c">
+			<Option target="testAllegro"/>
+		</Unit>
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/eventos.h">
+			<Option target="testAllegro"/>
+		</Unit>
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/initGame.c">
+			<Option target="testAllegro"/>
+		</Unit>
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/initGame.h">
+			<Option target="testAllegro"/>
+		</Unit>
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/scoreBoard.c">
+			<Option target="testAllegro"/>
+		</Unit>
+		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/scoreBoard.h">
 			<Option target="testAllegro"/>
 		</Unit>
 		<Unit filename="C:/Users/thale/CLionProjects/pds-tp1-combate/types.h">

@@ -1,52 +1,58 @@
-typedef struct GameHistory {
-    int firstPlayerWins;
-    int secondPlayerWins;
-} GameHistory;
+#include <allegro5/allegro_ttf.h>
+#include <allegro5/allegro_primitives.h>
+#include <allegro5/allegro_image.h>
+#include <allegro5/allegro_audio.h>
 
-typedef struct Globals {
+typedef struct GameHistory {
+    int tanqueA;
+    int tanqueB;
+} ScoreBoard;
+
+typedef struct VariaveisGlobais {
     float FPS;
     int SCREEN_W;
     int SCREEN_H;
     float SCREEN_HORIZONTAL_FRACTION;
     float SCREEN_VERTICAL_FRACTION;
     float FORCE_FIELD_RADIUS;
-    float tankSpeed;
-    float angleVariation;
-    GameHistory history;
+    float velocidadeDoTanque;
+    float velocidadeDoMissil;
+    float velocidadeAngular;
+    ScoreBoard history;
     ALLEGRO_DISPLAY *display;
     ALLEGRO_EVENT_QUEUE* event_queue;
     ALLEGRO_TIMER* timer;
     ALLEGRO_FONT *size_32;
-} Globals;
+} VariaveisGlobais;
 
 typedef struct Ponto {
     float x, y;
 } Ponto;
 
-typedef struct CirculoTanque {
+typedef struct Circulo {
     Ponto centro;
     float raio;
-    float velocidade;
+    float velocidadeLinear;
     float angulo;
     float velocidadeAngular;
     float cossenoEixoX;
     float senoEixoY;
-} CirculoTanque;
+} Circulo;
 
 typedef struct Missil {
-    CirculoTanque circuloTanque;
+    Circulo missil;
     ALLEGRO_COLOR color;
     int emMovimento;
 } Missil;
 
 typedef struct Tanque {
-    CirculoTanque mobileCircle;
+    Circulo circuloExterno;
     Ponto A, B, C;
     ALLEGRO_COLOR color;
-    float isColliding;
-    Missil missile;
-    int healthPoints;
-    int points;
+    float emColisao;
+    Missil missil;
+    int HP;
+    int pontos;
 } Tanque;
 
 typedef struct Tanques {

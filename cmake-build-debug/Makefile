@@ -169,32 +169,113 @@ combat.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/combat.c.s
 .PHONY : combat.c.s
 
-historyFile.obj: historyFile.c.obj
+draw.obj: draw.c.obj
 
-.PHONY : historyFile.obj
+.PHONY : draw.obj
 
 # target to build an object file
-historyFile.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/historyFile.c.obj
-.PHONY : historyFile.c.obj
+draw.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/draw.c.obj
+.PHONY : draw.c.obj
 
-historyFile.i: historyFile.c.i
+draw.i: draw.c.i
 
-.PHONY : historyFile.i
+.PHONY : draw.i
 
 # target to preprocess a source file
-historyFile.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/historyFile.c.i
-.PHONY : historyFile.c.i
+draw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/draw.c.i
+.PHONY : draw.c.i
 
-historyFile.s: historyFile.c.s
+draw.s: draw.c.s
 
-.PHONY : historyFile.s
+.PHONY : draw.s
 
 # target to generate assembly for a file
-historyFile.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/historyFile.c.s
-.PHONY : historyFile.c.s
+draw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/draw.c.s
+.PHONY : draw.c.s
+
+eventos.obj: eventos.c.obj
+
+.PHONY : eventos.obj
+
+# target to build an object file
+eventos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/eventos.c.obj
+.PHONY : eventos.c.obj
+
+eventos.i: eventos.c.i
+
+.PHONY : eventos.i
+
+# target to preprocess a source file
+eventos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/eventos.c.i
+.PHONY : eventos.c.i
+
+eventos.s: eventos.c.s
+
+.PHONY : eventos.s
+
+# target to generate assembly for a file
+eventos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/eventos.c.s
+.PHONY : eventos.c.s
+
+initGame.obj: initGame.c.obj
+
+.PHONY : initGame.obj
+
+# target to build an object file
+initGame.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/initGame.c.obj
+.PHONY : initGame.c.obj
+
+initGame.i: initGame.c.i
+
+.PHONY : initGame.i
+
+# target to preprocess a source file
+initGame.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/initGame.c.i
+.PHONY : initGame.c.i
+
+initGame.s: initGame.c.s
+
+.PHONY : initGame.s
+
+# target to generate assembly for a file
+initGame.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/initGame.c.s
+.PHONY : initGame.c.s
+
+scoreBoard.obj: scoreBoard.c.obj
+
+.PHONY : scoreBoard.obj
+
+# target to build an object file
+scoreBoard.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/scoreBoard.c.obj
+.PHONY : scoreBoard.c.obj
+
+scoreBoard.i: scoreBoard.c.i
+
+.PHONY : scoreBoard.i
+
+# target to preprocess a source file
+scoreBoard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/scoreBoard.c.i
+.PHONY : scoreBoard.c.i
+
+scoreBoard.s: scoreBoard.c.s
+
+.PHONY : scoreBoard.s
+
+# target to generate assembly for a file
+scoreBoard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testAllegro.dir\build.make CMakeFiles/testAllegro.dir/scoreBoard.c.s
+.PHONY : scoreBoard.c.s
 
 # Help Target
 help:
@@ -208,9 +289,18 @@ help:
 	@echo ... combat.obj
 	@echo ... combat.i
 	@echo ... combat.s
-	@echo ... historyFile.obj
-	@echo ... historyFile.i
-	@echo ... historyFile.s
+	@echo ... draw.obj
+	@echo ... draw.i
+	@echo ... draw.s
+	@echo ... eventos.obj
+	@echo ... eventos.i
+	@echo ... eventos.s
+	@echo ... initGame.obj
+	@echo ... initGame.i
+	@echo ... initGame.s
+	@echo ... scoreBoard.obj
+	@echo ... scoreBoard.i
+	@echo ... scoreBoard.s
 .PHONY : help
 
 
